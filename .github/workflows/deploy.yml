@@ -26,7 +26,7 @@ jobs:
       
       - name: Fix worker file structure and create assetsignore
         run: |
-          echo "_worker.js" > dist/.assetsignore
+          touch dist/.assetsignore
           if [ -d "dist/_worker.js" ]; then
             mv dist/_worker.js/index.js dist/_worker.js.tmp
             rm -rf dist/_worker.js
