@@ -1,0 +1,112 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeoPage from "@/components/SeoPage.astro";
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="Contact" description="Get in touch with Workflow Boom for your automation needs" />
+  <main>
+    <div class="mb-8">
+      <a 
+        href="/" 
+        class="inline-flex items-center gap-2 text-sm text-lightModeForegroundMuted hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground no-underline"
+      >
+        ← Back to Home
+      </a>
+      <h1 class="text-2xl font-bold mt-4 mb-6">Contact Us</h1>
+    </div>
+    
+    <div class="prose prose-sm max-w-none text-lightModeForeground dark:text-darkModeForeground">
+      <p class="text-lg mb-8">
+        Ready to transform your business with intelligent automation? We'd love to hear from you!
+      </p>
+      
+      <div class="grid gap-8 md:grid-cols-2">
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Get in Touch</h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-medium mb-1">Email</h3>
+              <a 
+                href="mailto:info@workflowboom.com" 
+                class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground hover:underline"
+              >
+                info@workflowboom.com
+              </a>
+            </div>
+            
+            <div>
+              <h3 class="font-medium mb-1">Schedule discovery call</h3>
+              <a 
+                href="https://calendly.com/workflowboom" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground hover:underline"
+              >
+                Book a free consultation
+              </a>
+            </div>
+            
+            <div>
+              <h3 class="font-medium mb-1">Follow Us</h3>
+              <a 
+                href="https://twitter.com/workflowboom" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground hover:underline"
+              >
+                @workflowboom on Twitter
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h2 class="text-xl font-semibold mb-4">What to Expect</h2>
+          <div class="space-y-3">
+            <div class="flex items-start gap-3">
+              <span class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground font-bold">1.</span>
+              <p class="text-sm">
+                <strong>Free Consultation</strong> - We'll discuss your current processes and identify automation opportunities
+              </p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground font-bold">2.</span>
+              <p class="text-sm">
+                <strong>Custom Proposal</strong> - Receive a tailored solution with timeline and pricing
+              </p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground font-bold">3.</span>
+              <p class="text-sm">
+                <strong>Implementation</strong> - We build, test, and deploy your automation solutions
+              </p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground font-bold">4.</span>
+              <p class="text-sm">
+                <strong>Training & Support</strong> - Your team gets trained and ongoing support
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-12 p-6 bg-lightModeIconLinkBackground dark:bg-darkModeIconLinkBackground rounded-lg">
+        <h2 class="text-xl font-semibold mb-3">Ready to Get Started?</h2>
+        <p class="mb-4">
+          The best way to get started is with a free consultation. We'll analyze your current workflows and show you 
+          exactly how automation can save your business time and money.
+        </p>
+        <a 
+          href="https://calendly.com/workflowboom" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block px-6 py-3 bg-lightModeCustomLinkBackground dark:bg-darkModeCustomLinkBackground text-lightModeCustomLinkText dark:text-darkModeCustomLinkText rounded-md hover:bg-lightModeCustomLinkBackgroundHover dark:hover:bg-darkModeCustomLinkBackgroundHover transition-colors no-underline font-medium"
+        >
+          Schedule Free Consultation
+        </a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

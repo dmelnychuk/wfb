@@ -1,0 +1,23 @@
+---
+import { type CollectionEntry } from "astro:content";
+
+interface Props {
+  service: CollectionEntry<"our-service">;
+}
+
+const { service } = Astro.props;
+---
+
+<li class="flex flex-col text-center no-underline">
+  <a href={`/our-service/${service.slug}`} class="block border border-lightModeIconLinkOutline dark:border-darkModeIconLinkOutline rounded-lg p-4 hover:border-lightModeCustomLinkOutline dark:hover:border-darkModeCustomLinkOutline transition-colors">
+    <span
+      class="flex flex-wrap justify-center text-balance text-2xl font-medium"
+      >{service.data.title}</span
+    >
+    <div
+      class="mt-1 text-sm text-lightModeForegroundMuted dark:text-darkModeForegroundMuted"
+    >
+      {service.data.description}
+    </div>
+  </a>
+</li>

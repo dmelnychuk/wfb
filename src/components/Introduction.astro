@@ -3,18 +3,18 @@ import { Image } from "astro:assets";
 
 import { SITE } from "@/siteConfig";
 
-import profilePicture from "@/assets/profile-picture.jpg";
+import profilePicture from "@/assets/workflowboom-main.jpg";
 ---
 
 <div class="mt-8 py-4">
   <Image
     src={profilePicture}
     alt={SITE.name}
-    height={256}
-    width={256}
+    height={1024}
+    width={1024}
     loading="eager"
     draggable="false"
-    class="mx-auto size-32 rounded-full"
+    class="mx-auto size-64 "
   />
   <h1 class="mt-4 text-center text-3xl font-semibold">{SITE.name}</h1>
   <p
@@ -22,4 +22,9 @@ import profilePicture from "@/assets/profile-picture.jpg";
   >
     {SITE.bio}
   </p>
+  <blockquote class="mt-6 text-center">
+    <p class="text-lg font-medium italic text-lightModeForeground dark:text-darkModeForeground">
+      "We bring order to your workflow, so you can focus on what matters most."
+    </p>
+  </blockquote>
 </div>

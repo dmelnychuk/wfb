@@ -19,14 +19,5 @@ const posts = (await getCollection("blog")).sort(
   <SeoPage slot="head" />
   <main>
     <Content />
-    {
-      SITE.blog ? (
-        <ul class="grid list-none gap-y-8 px-0 py-12">
-          {posts.map((post: CollectionEntry<"blog">) => (
-            <Post post={post} />
-          ))}
-        </ul>
-      ) : null
-    }
   </main>
 </BaseLayout>

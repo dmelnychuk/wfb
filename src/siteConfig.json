@@ -1,56 +1,51 @@
 {
-  "name": "Trevor Tyler Lee",
-  "bio": "Free, open source LinkTree alternative built with Astro & Tailwind CSS",
-  "profilePicture": "/profile-picture.jpg",
-  "url": "https://trevortylerlee.com",
+  "name": "Workflow Boom",
+  "bio": "Business workflow automations",
+  "profilePicture": "/workflowboom-main.jpg",
+  "url": "https://workflowboom.com",
   "blog": true,
   "iconLinks": [
     {
-      "id": "1728534577184",
-      "icon": "link",
-      "url": "https://boogerbuttcheeks.com"
-    },
-    {
-      "id": "1728534577185",
+      "id": "2",
       "icon": "email",
-      "url": "mailto:ttl@trevortylerlee.com"
+      "url": "mailto:info@workflowboom.com"
     },
     {
-      "id": "1728534577186",
-      "icon": "github",
-      "url": "https://github.com/trevortylerlee"
-    },
-    {
-      "id": "1728534577187",
+      "id": "3",
       "icon": "twitter",
-      "url": "https://twitter.com/boogerbuttcheek"
+      "url": "https://twitter.com/workflowboom"
+    },
+    {
+      "id": "4",
+      "icon": "calendar",
+      "url": "https://calendly.com/workflowboom"
     }
   ],
   "customLinks": [
     {
-      "id": "1728534585738",
-      "title": "🍌 donkey kong country on the snes",
-      "url": "https://youtu.be/7hgr-ZuzXng?si=v3dr9mu2cBL_D4ED"
+      "id": "1",
+      "title": "Our Services",
+      "url": "./our-service"
     },
     {
-      "id": "1728534585739",
-      "title": " Best macOS apps",
-      "url": "https://macintoshapps.com"
+      "id": "2",
+      "title": "Blog",
+      "url": "./blog"
     },
     {
-      "id": "1728534585740",
-      "title": "💕 36 Questions To Fall In Love",
-      "url": "https://thirtysixquestions.org"
+      "id": "3",
+      "title": "About",
+      "url": "./about"
     },
     {
-      "id": "1728534585741",
-      "title": "SuperWeb Themes",
-      "url": "https://superwebthemes.com"
+      "id": "4",
+      "title": "FAQ",
+      "url": "./faq"
     },
     {
-      "id": "1728534585742",
-      "title": "♥ Donate",
-      "url": "https://donate.stripe.com/aEU6ow7VEf7u7sseUU"
+      "id": "5",
+      "title": "Contact",
+      "url": "./contact"
     }
   ]
 }

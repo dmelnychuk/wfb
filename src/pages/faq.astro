@@ -1,0 +1,80 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeoPage from "@/components/SeoPage.astro";
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="FAQ" description="Frequently asked questions about Workflow Boom services" />
+  <main>
+    <div class="mb-8">
+      <a 
+        href="/" 
+        class="inline-flex items-center gap-2 text-sm text-lightModeForegroundMuted hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground no-underline"
+      >
+        ← Back to Home
+      </a>
+      <h1 class="text-2xl font-bold mt-4 mb-6">Frequently Asked Questions</h1>
+    </div>
+    
+    <div class="prose prose-sm max-w-none text-lightModeForeground dark:text-darkModeForeground">
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-2">What types of businesses do you work with?</h3>
+          <p>
+            We work with businesses of all sizes, from startups to enterprise companies. Our automation solutions are particularly beneficial for 
+            service-based businesses, e-commerce companies, and any organization with repetitive manual processes.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-2">How long does it take to implement workflow automation?</h3>
+          <p>
+            Implementation timelines vary based on complexity, but most projects are completed within 2-6 weeks. Simple automations can be 
+            set up in a few days, while comprehensive CRM setups may take several weeks to ensure everything is properly configured and tested.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Do you provide training for our team?</h3>
+          <p>
+            Absolutely! We include comprehensive training as part of every project. We ensure your team understands how to use and maintain 
+            the automated systems we implement. We also provide documentation and ongoing support.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-2">What tools and platforms do you work with?</h3>
+          <p>
+            We work with a wide range of popular business tools including Zapier, Make (formerly Integromat), HubSpot, Salesforce, 
+            Monday.com, Airtable, Google Workspace, Microsoft 365, and many others. We choose the best tools based on your specific needs and existing infrastructure.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-2">How much can workflow automation save my business?</h3>
+          <p>
+            Most of our clients see significant time savings within the first month - typically 10-20 hours per week of manual work eliminated. 
+            This translates to cost savings and allows your team to focus on higher-value activities that drive business growth.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-2">Do you offer ongoing support after implementation?</h3>
+          <p>
+            Yes, we provide ongoing support and maintenance packages. We can monitor your automations, make adjustments as your business grows, 
+            and help you expand your automation capabilities over time.
+          </p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-2">How do I get started?</h3>
+          <p>
+            Getting started is easy! 
+            <a href="/contact" class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground hover:underline">Contact us</a> 
+            to schedule a free consultation where we'll discuss your current processes and identify automation opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

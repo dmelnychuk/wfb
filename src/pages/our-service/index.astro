@@ -1,0 +1,37 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+
+import { SITE } from "@/siteConfig";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+import Content from "@/components/Content.astro";
+import Service from "@/components/Service.astro";
+import SeoPage from "@/components/SeoPage.astro";
+
+const services = await getCollection("our-service");
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="Our Services" description="Professional business automation and CRM services" />
+  <main>
+    <div class="mb-8">
+      <a 
+        href="/" 
+        class="inline-flex items-center gap-2 text-sm text-lightModeForegroundMuted hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground no-underline"
+      >
+        ← Back to Home
+      </a>
+      <h1 class="text-2xl font-bold mt-4 mb-2">Our Services</h1>
+      <p class="text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+        Professional business automation and workflow solutions
+      </p>
+    </div>
+    
+    <ul class="grid list-none gap-y-8 px-0 py-4">
+      {services.map((service: CollectionEntry<"our-service">) => (
+        <Service service={service} />
+      ))}
+    </ul>
+  </main>
+</BaseLayout>

@@ -1,0 +1,46 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+
+import { SITE } from "@/siteConfig";
+
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Post from "@/components/Post.astro";
+import SeoPage from "@/components/SeoPage.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a: CollectionEntry<"blog">, b: CollectionEntry<"blog">) =>
+    b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf(),
+);
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="Blog" description="Latest insights and updates from Workflow Boom" />
+  <main>
+    <div class="mb-8">
+      <a 
+        href="/" 
+        class="inline-flex items-center gap-2 text-sm text-lightModeForegroundMuted hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground no-underline"
+      >
+        ← Back to Home
+      </a>
+      <h1 class="text-2xl font-bold mt-4 mb-2">Blog</h1>
+      <p class="text-lightModeForegroundMuted dark:text-darkModeForegroundMuted">
+        Latest insights and updates from Workflow Boom
+      </p>
+    </div>
+    
+    {
+      posts.length > 0 ? (
+        <ul class="grid list-none gap-y-8 px-0 py-4">
+          {posts.map((post: CollectionEntry<"blog">) => (
+            <Post post={post} />
+          ))}
+        </ul>
+      ) : (
+        <p class="text-lightModeForegroundMuted dark:text-darkModeForegroundMuted py-8">
+          No blog posts available yet. Check back soon!
+        </p>
+      )
+    }
+  </main>
+</BaseLayout>

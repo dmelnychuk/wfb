@@ -5,7 +5,7 @@ const { post } = Astro.props;
 ---
 
 <li class="flex flex-col text-center no-underline">
-  <a href={`/blog/${post.slug}`}>
+  <a href={`/blog/${post.slug}`} class="block border border-lightModeIconLinkOutline dark:border-darkModeIconLinkOutline rounded-lg p-4 hover:border-lightModeCustomLinkOutline dark:hover:border-darkModeCustomLinkOutline transition-colors">
     <span
       class="flex flex-wrap justify-center text-balance text-2xl font-medium"
       >{post.data.title}</span

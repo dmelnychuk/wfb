@@ -1,0 +1,51 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import SeoPage from "@/components/SeoPage.astro";
+---
+
+<BaseLayout>
+  <SeoPage slot="head" title="About" description="Learn more about Workflow Boom and our mission" />
+  <main>
+    <div class="mb-8">
+      <a 
+        href="/" 
+        class="inline-flex items-center gap-2 text-sm text-lightModeForegroundMuted hover:text-lightModeForeground dark:text-darkModeForegroundMuted dark:hover:text-darkModeForeground no-underline"
+      >
+        ← Back to Home
+      </a>
+      <h1 class="text-2xl font-bold mt-4 mb-6">About Workflow Boom</h1>
+    </div>
+    
+    <div class="prose prose-sm max-w-none text-lightModeForeground dark:text-darkModeForeground">
+      <h2>Our Mission</h2>
+      <p>
+        At Workflow Boom, we specialize in transforming business operations through intelligent automation and streamlined workflows. 
+        Our mission is to help businesses eliminate repetitive tasks, reduce human error, and focus on what truly matters - growth and innovation.
+      </p>
+      
+      <h2>What We Do</h2>
+      <p>
+        We provide comprehensive business automation solutions that include:
+      </p>
+      <ul>
+        <li><strong>CRM Setup & Optimization</strong> - Streamline your customer relationship management</li>
+        <li><strong>Workflow Automation</strong> - Automate repetitive business processes</li>
+        <li><strong>Integration Services</strong> - Connect your tools and systems seamlessly</li>
+        <li><strong>Process Optimization</strong> - Identify and eliminate bottlenecks in your operations</li>
+      </ul>
+      
+      <h2>Why Choose Us</h2>
+      <p>
+        With years of experience in business process optimization, we understand that every business is unique. 
+        Our approach is tailored to your specific needs, ensuring that the solutions we implement actually work for your team and your goals.
+      </p>
+      
+      <h2>Get Started</h2>
+      <p>
+        Ready to transform your business operations? 
+        <a href="/contact" class="text-lightModeCustomLinkBackground dark:text-darkModeCustomLinkBackground hover:underline">Contact us</a> 
+        to schedule a consultation and discover how we can help streamline your workflows.
+      </p>
+    </div>
+  </main>
+</BaseLayout>
