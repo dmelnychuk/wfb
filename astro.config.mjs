@@ -8,12 +8,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
+  output: "hybrid",
   site: "https://workflowboom.com",
   integrations: [tailwind(), sitemap(), icon()],
-  adapter: cloudflare({
-    platformProxy: {
-      enabled: false,
-    },
-  }),
+  adapter: cloudflare(),
 });

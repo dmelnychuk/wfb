@@ -2,9 +2,5 @@
   "name": "workflowboom",
   "compatibility_date": "2025-08-15",
   "main": "dist/_worker.js",
-  "compatibility_flags": ["nodejs_compat"],
-  "assets": {
-    "directory": "dist",
-    "binding": "ASSETS"
-  }
+  "compatibility_flags": ["nodejs_compat"]
 }
