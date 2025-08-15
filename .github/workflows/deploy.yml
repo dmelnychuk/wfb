@@ -1,4 +1,4 @@
-name: Deploy to Cloudflare Pages
+name: Deploy to Cloudflare Workers
 
 on:
   push:
@@ -24,10 +24,16 @@ jobs:
       - name: Build project
         run: npm run build
       
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+      - name: Fix worker file structure
+        run: |
+          if [ -d "dist/_worker.js" ]; then
+            mv dist/_worker.js/index.js dist/_worker.js.tmp
+            rm -rf dist/_worker.js
+            mv dist/_worker.js.tmp dist/_worker.js
+          fi
+      
+      - name: Deploy to Cloudflare Workers
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: workflowboom
-          directory: dist
