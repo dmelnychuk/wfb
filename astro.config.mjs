@@ -9,9 +9,8 @@ import icon from "astro-icon";
 export default defineConfig({
   output: "server",
   adapter: cloudflare({
-    platformProxy: {
-      enabled: true
-    }
+    mode: "advanced",
+    functionPerRoute: false
   }),
   site: "https://workflowboom.com",
   integrations: [tailwind(), sitemap(), icon()],
