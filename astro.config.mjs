@@ -9,6 +9,6 @@ import icon from "astro-icon";
 export default defineConfig({
   output: "server",
   adapter: cloudflare(),
-  site: "https://example.treelink.com",
+  site: "https://workflowboom.com",
   integrations: [tailwind(), sitemap(), icon()],
 });
