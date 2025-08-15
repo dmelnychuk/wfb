@@ -1,0 +1,5 @@
+{
+  "name": "workflowboom",
+  "compatibility_date": "2025-08-15",
+  "main": "dist/_worker.js"
+}
