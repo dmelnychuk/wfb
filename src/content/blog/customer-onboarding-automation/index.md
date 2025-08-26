@@ -9,7 +9,7 @@ tags: ["automation", "customer-onboarding", "customer-success", "retention"]
 
 First impressions matter—especially in business. A smooth, professional onboarding experience sets the tone for your entire customer relationship. Companies with strong onboarding processes improve new customer retention by 82% and increase revenue by over 70%.
 
-![Customer Onboarding Automation](../../images/bwink_edu_07_single_06.jpg "Streamline customer onboarding with automation")
+![Customer Onboarding Automation](../../images/bwink_msc_07_single_01.jpg "Streamline customer onboarding with automation")
 
 Manual onboarding is time-consuming, inconsistent, and prone to delays that frustrate new customers. Automation transforms this critical process into a seamless experience that delights customers while saving your team countless hours.
 
